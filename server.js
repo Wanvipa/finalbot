@@ -64,6 +64,8 @@ function receivedMessage(event) {
   if (messageText) {
     if (messageText === 'hello') {
       sendTextMessage(senderID, "ควยเอ้ย ไม่รู้ request");
+    }else if (messageText === parseInt("50") {
+      sendTextMessage(senderID, "D");
     }
 
     // If we receive a text message, check to see if it matches a keyword

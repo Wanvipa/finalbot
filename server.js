@@ -62,10 +62,12 @@ function receivedMessage(event) {
   var messageAttachments = message.attachments;
 
   if (messageText) {
+    var point = parseInt(messageText)
+    if(point >= 80 && point <= 100){
+      sendTextMessage(senderID, 'a')
+    }
     if (messageText === 'hello') {
       sendTextMessage(senderID, "ควยเอ้ย ไม่รู้ request");
-    }else if (messageText === parseInt(50)) {
-      sendTextMessage(senderID, "D");
     }
 
     // If we receive a text message, check to see if it matches a keyword
